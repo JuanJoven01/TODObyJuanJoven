@@ -1,0 +1,19 @@
+li {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 20px;
+}
+
+p {
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.lThrough {
+    text-decoration:line-through;
+}

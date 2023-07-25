@@ -1,0 +1,16 @@
+.create__button{
+    display: block;
+    position:absolute;
+    right: 20px;
+    border-radius: 50%;
+    border-color: linear-gradient(rgba(255, 192, 203, 0.511), rgba(0, 0, 255, 0.497));
+    background-color: rgba(140, 0, 255, 0);
+    font-weight: bold;
+    transform: rotate(0deg);
+    transition-duration: .5s;
+}
+
+.create__button:hover{
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
