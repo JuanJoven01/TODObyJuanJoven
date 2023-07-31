@@ -1,6 +1,6 @@
-import notDone from './icons/notDone.png';
-import done from './icons/done.png';
-import remove from './icons/exit.png';
+import notDone from '../icons/notDone.png';
+import done from '../icons/done.png';
+import remove from '../icons/exit.png';
 import './TodoItem.css'
 function TodoItem(props) {
     return (
