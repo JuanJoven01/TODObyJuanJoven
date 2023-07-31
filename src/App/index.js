@@ -11,6 +11,38 @@ import react from 'react';
 
 function App() {
 
+    const [todos, setTodos] = react.useState([
+      {text: 'Cortar Cebolla', completed: true},
+      {text: 'Tomar el curso de introducción a React JS', completed: false},
+      {text: 'Llorar con la Llorona', completed: false},
+    ]);
+       const [searchValue, setSearchValue] = react.useState('');
+      {text: 'Cualquier cosa', completed: true}
+       console.log('los usuarios están buscando todos de '+searchValue)
+       const renderTodos = todos.filter(
+      (todo) => {
+        return todo.text.toLocaleLowerCase().includes(searchValue.toLocaleLowerCase());
+      }
+    )
+    
+    const completeTodo = (text) => {
+      const newTodos = [...todos];
+      const todoIndex = newTodos.findIndex(
+        (todo) => todo.text == text
+      );
+      newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
+      setTodos(newTodos);
+    };
+       const deleteTodo = (text) => {
+      const newTodos = [...todos];
+      const todoIndex = newTodos.findIndex(
+        (todo) => todo.text == text
+      );
+      newTodos.splice(todoIndex, 1);
+      setTodos(newTodos);
+    };
+       
+  
   return (
     <React.Fragment>
 
