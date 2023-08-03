@@ -1,0 +1,13 @@
+.emptyTodos {
+    display: flex;
+}
+
+.emptyTodos_p {
+    border: 1px solid rgba(0, 0, 0, 0.254);
+    height: 40px;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+}

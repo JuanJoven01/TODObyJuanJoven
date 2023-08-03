@@ -1,0 +1,33 @@
+.loadingTodos {
+    display: flex;
+    flex-direction: column;
+    animation-name: hearth;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loadingTodos__div {
+    border: 1px solid rgba(0, 0, 0, 0.254);
+    height: 40px;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+}
+
+.loadingTodos__div p {
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes hearth {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 20%;
+    }
+}
